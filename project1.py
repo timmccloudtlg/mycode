@@ -33,3 +33,13 @@ if month in months:
         sign = "Sagittarius" if (day < 20) else "Capricorn"
 
     print("Your zodiac sign is " + sign)
+
+    # this one works.
+    # it looks great!
+    # do i need to add more for the other one.  I can try to do some other things
+    # no, I think you nailed it-- it's good functioning code, that's all I need to see
+# so i need to start the other project
+# the RPG one for today? yup
+# Thank you, Sir.
+# you're welcome!!!!!
+
