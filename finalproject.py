@@ -3,12 +3,12 @@ import random
 
 def play():
     #This function defines the input for the user and uses random.choice fro the computer to choose.
-    user = input("Please choose 'r' for rock, 'p' for paper, 's' for scissors\n")
+    user = input("Welcome to Rock, Paper, Scissor. Please choose 'r' for rock, 'p' for paper, 's' for scissors.\n")
     computer = random.choice(['r', 'p', 's'])
 
     #This code returns the word tie if the user and the computer choose the same input
     if user == computer:
-        return 'tie'
+        return 'Tie'
 
 
     # r > s, s > p, p > r
