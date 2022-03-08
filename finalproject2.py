@@ -5,22 +5,26 @@ import time
 import spinning
 from PIL import Image
 
-img = Image.new('RGB', (60, 30), color = 'red')
-img.save('pil_red.png')
+
+this_string = "\n\nWELCOME"
+
+for character_index in this_string:
+   print(character_index) # print each character at a time from string
+   time.sleep(0.5)
  
 # Print instruction
 # performstring concatenation of string
-print("\n\n\nYou are about to play Rock, Paper, Scissor? The rules for the game are as follows:")
+print("\n\nYou are about to play Rock, Paper, Scissors. The rules for the game are as follows:")
 time.sleep(3)
 print("Rock vs Paper !!PAPER Wins!! ")
 time.sleep(3)
-print("Rock vs Scissor !!ROCK Wins!! ")
+print("Rock vs Scissors !!ROCK Wins!! ")
 time.sleep(3)
-print("Paper vs Scissor !!SCISSOR Wins!!")
+print("Paper vs Scissors !!SCISSORS Wins!!")
 time.sleep(4)
 
 while True:
-    print("\nEnter one of the following choices 1 for Rock, 2 for Paper, and 3 for Scissor.")
+    print("\nEnter one of the following choices 1 for Rock, 2 for Paper, and 3 for Scissors.")
      
     # This is where the user enter his choice 
     choice = int(input("Your turn. Enter 1, 2, or 3: "))
@@ -42,13 +46,13 @@ while True:
     elif choice == 2:
         choice_name = 'Paper'
     else:
-        choice_name = 'Scissor'
+        choice_name = 'Scissors'
         time.sleep(3)
          
     # print user choice
     print("You have entered: " + choice_name)
     time.sleep(3)
-    print("\nNow its computer turn.......")
+    print("\nNow its the COMPUTER's turn.......")
     spinning.spin()
  
     # Computer chooses randomly any number
@@ -68,9 +72,9 @@ while True:
     elif comp_choice == 2:
         comp_choice_name = 'Paper'
     else:
-        comp_choice_name = 'Scissor'
+        comp_choice_name = 'Scissors'
          
-    print("The Computer's choice is: " + comp_choice_name)
+    print("The COMPUTER's choice is: " + comp_choice_name)
     time.sleep(3)
  
     print("\nThe challenge is " + choice_name + " verses " + comp_choice_name)
@@ -81,25 +85,25 @@ while True:
     # condition for winning
     if((choice == 1 and comp_choice == 2) or
       (choice == 2 and comp_choice ==1 )):
-        print("\nPAPER WINS!!! => ", end = "")
+        print("\nPAPER WINS!!! =", end = "")
         result = "Paper"
         time.sleep(2)
     elif((choice == 1 and comp_choice == 3) or
         (choice == 3 and comp_choice == 1)):
-        print("\nROCK WINS!!! =>", end = "")
+        print("\nROCK WINS!!! =", end = "")
         result = "Rock"
         time.sleep(2)
     else:
-        print("\nSCISSOR WINS!!! =>", end = "")
+        print("\nSCISSORS WINS!!! =", end = "")
         result = "Scissor"
         time.sleep(2)
  
     # Printing either user or computer wins
     if result == choice_name:
-        print("<== !!!You Win!!! ==>")
+        print("== *** YOU WIN *** :-)")
         time.sleep(3)
     else:
-        print("<== COMPUTER Wins ==>")
+        print("== The COMPUTER Wins :-( ")
         time.sleep(3)
 
     print("\nDo you want to play again? (Y/N)")
@@ -112,4 +116,12 @@ while True:
      
 # after coming out of the while loop
 # we print thanks for playing
+
+this_string = "\n\nTHANKS FOR PLAYING"
+
+for character_index in this_string:
+   print(character_index) # print each character at a time from string
+   time.sleep(0.5)
+
 print("\nThanks for playing")
+
