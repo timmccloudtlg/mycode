@@ -9,11 +9,11 @@ from PIL import Image
 this_string = "\n\nWELCOME"
 
 for character_index in this_string:
-   print(character_index) # print each character at a time from string
+   print(character_index) # print each character at a time from this_string
    time.sleep(0.5)
  
 # Print instruction
-# performstring concatenation of string
+# Prints the strings with a time delay
 print("\n\nYou are about to play Rock, Paper, Scissors. The rules for the game are as follows:")
 time.sleep(3)
 print("Rock vs Paper !!PAPER Wins!! ")
@@ -78,7 +78,7 @@ while True:
     time.sleep(3)
  
     print("\nThe challenge is " + choice_name + " verses " + comp_choice_name)
-    print("!!!FIGHT!!!")
+    print("!!!FIGHT ***  FIGHT *** FIGHT!!!")
     spinning.spin()
     
  
@@ -117,11 +117,11 @@ while True:
 # after coming out of the while loop
 # we print thanks for playing
 
-this_string = "\n\nTHANKS FOR PLAYING"
+this_string = "\nTHANKS FOR PLAYING"
 
 for character_index in this_string:
    print(character_index) # print each character at a time from string
    time.sleep(0.5)
 
-print("\nThanks for playing. I hope it was a good experience!!!")
+print("\nI hope it was a good experience. Please play again")
 
