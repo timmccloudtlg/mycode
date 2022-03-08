@@ -123,5 +123,5 @@ for character_index in this_string:
    print(character_index) # print each character at a time from string
    time.sleep(0.5)
 
-print("\nThanks for playing")
+print("\nThanks for playing. I hope it was a good experience!!!")
 
