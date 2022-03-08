@@ -3,6 +3,10 @@
 import random
 import time 
 import spinning
+from PIL import Image
+
+img = Image.new('RGB', (60, 30), color = 'red')
+img.save('pil_red.png')
  
 # Print instruction
 # performstring concatenation of string
@@ -13,7 +17,7 @@ time.sleep(3)
 print("Rock vs Scissor !!ROCK Wins!! ")
 time.sleep(3)
 print("Paper vs Scissor !!SCISSOR Wins!!")
-time.sleep(6)
+time.sleep(4)
 
 while True:
     print("\nEnter one of the following choices 1 for Rock, 2 for Paper, and 3 for Scissor.")
@@ -42,10 +46,10 @@ while True:
         time.sleep(3)
          
     # print user choice
-    print("You have enterd: " + choice_name)
+    print("You have entered: " + choice_name)
     time.sleep(3)
     print("\nNow its computer turn.......")
-    time.sleep(3)
+    spinning.spin()
  
     # Computer chooses randomly any number
     # among 1 , 2 and 3. Using randint method
@@ -72,7 +76,7 @@ while True:
     print("\nThe challenge is " + choice_name + " verses " + comp_choice_name)
     print("!!!FIGHT!!!")
     spinning.spin()
-    spinning.spin()
+    
  
     # condition for winning
     if((choice == 1 and comp_choice == 2) or
